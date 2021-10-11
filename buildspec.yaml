@@ -16,6 +16,7 @@ phases:
     commands:
       - echo "Starting SAM packaging `date` in `pwd`"
       - sam --version
+      - uname -a
       - sam build
       - sam local invoke
   post_build:
